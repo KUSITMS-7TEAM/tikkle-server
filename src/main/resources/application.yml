@@ -46,6 +46,13 @@ logging:
         util:
           EC2MetadataUtils: error
 
+management:
+  endpoints:
+    prometheus:
+      enabled: true
+    web:
+      exposure:
+        include: prometheus
 
 jwt:
   secret: ${SECRET_KEY}
